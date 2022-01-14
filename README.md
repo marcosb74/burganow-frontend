@@ -40,7 +40,7 @@ On the admin-side, the administrator can remove products, add new products, modi
 
 
 **Hosting Details:**
-- The project was developed on Netlify
+- The project was deployed on Netlify
 
 ## Live version: <a name = "live"></a>
 
@@ -53,5 +53,5 @@ On the admin-side, the administrator can remove products, add new products, modi
 npm install -  to install the project
 ```
 ```
-npm run serve -  to install initialize the project localy
+npm run serve -  to  initialize the project locally
 ```
