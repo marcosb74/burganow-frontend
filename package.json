@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "dotenv": "^11.0.0",
     "vue": "^2.6.11",
     "vue-form": "^4.10.3",
     "vue-router": "^3.5.3",

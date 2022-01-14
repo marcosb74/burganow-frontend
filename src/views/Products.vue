@@ -56,7 +56,7 @@ export default {
     getItems(){
       axios({
       method: "get",
-      url: "http://localhost:4000/api/listing/products",
+      url: `${process.env.VUE_APP_PROD}/api/listing/products`,
     }).then((response) => {
       this.getProducts(response.data)
     });
@@ -64,7 +64,6 @@ export default {
   },
    mounted() {
     this.getItems();
-    
   },
 };
 </script>

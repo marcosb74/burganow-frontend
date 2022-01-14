@@ -67,7 +67,7 @@ export default {
         id: this.id,
         isAdmin: this.aux
       }
-        axios.put(`http://localhost:4000/api/auth/userlist/${this.permissions.id}`,this.permissions).then(()=>{
+        axios.put(`${process.env.VUE_APP_PROD}/api/auth/userlist/${this.permissions.id}`,this.permissions).then(()=>{
         this.$swal("Success!", "The user has changed  its status successfully!", "success");
         });
       }

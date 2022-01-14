@@ -88,7 +88,7 @@ import axios from 'axios';
           email: this.email,
           password: this.password,
         };
-        await axios.post("http://localhost:4000/api/auth/signup",this.user).then((data) => {
+        await axios.post(`${process.env.VUE_APP_PROD}/api/auth/signup`,this.user).then((data) => {
           if(data.data === "user already on DB"){
             return this.$swal("Error!", "The user already exists on our db!", "error");
           }else {

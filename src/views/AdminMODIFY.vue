@@ -94,7 +94,7 @@ export default {
           description: this.description,
           img: this.img
         };
-        axios.put(`http://localhost:4000/api/listing/products/${this.food.id}`,this.food).then(()=>{
+        axios.put(`${process.env.VUE_APP_PROD}/api/listing/products/${this.food.id}`,this.food).then(()=>{
 
         this.$swal("Success!", "The burger has been modified from the database!", "success");
         });

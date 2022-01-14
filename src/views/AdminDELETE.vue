@@ -52,7 +52,7 @@ export default {
      handleDelete(){
         const id = this.id
         console.log(id);
-        axios.delete(`http://localhost:4000/api/listing/products/${id}`).then(()=>{
+        axios.delete(`${process.env.VUE_APP_PROD}/api/listing/products/${id}`).then(()=>{
         });
         this.$swal("Success!", "The burger has been deleted from the database!", "success");
 

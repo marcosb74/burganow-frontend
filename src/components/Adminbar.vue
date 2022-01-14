@@ -9,7 +9,7 @@
             icons-and-text
         >
             <v-tabs-slider></v-tabs-slider>
-            <v-tab href="#addburger">
+            <v-tab   href="#addburger">
               <v-tab-item value="addburger"></v-tab-item>
                 Add Burger
                 <v-icon>mdi-application-edit</v-icon>
@@ -37,7 +37,7 @@
             </v-tab>
         </v-tabs>
         <v-tabs-items v-model="tab">
-          <v-tab-item value="addburger">
+          <v-tab-item  value="addburger">
             <AdminPOST/>
           </v-tab-item>
           <v-tab-item value="modifyburger">

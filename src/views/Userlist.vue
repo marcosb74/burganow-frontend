@@ -50,7 +50,7 @@ export default {
     async getUsers()  {
        await axios({
       method: "get",
-      url: "http://localhost:4000/api/auth/userlist",
+      url: `${process.env.VUE_APP_PROD}/api/auth/userlist`,
     }).then((response) => {
       this.users = response.data;
     });

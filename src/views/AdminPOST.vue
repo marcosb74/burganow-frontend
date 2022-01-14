@@ -89,7 +89,7 @@ export default {
           description: this.description,
           img: this.img
         };
-        axios.post("http://localhost:4000/api/listing/products",this.food).then(data=>{
+        axios.post(`${process.env.VUE_APP_PROD}/api/listing/products`,this.food).then(data=>{
           console.log(data) 
         });
         this.$swal("Success!", "The burger has been added to the database!", "success");

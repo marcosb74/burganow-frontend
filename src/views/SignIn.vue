@@ -60,7 +60,7 @@ import axios from 'axios';
           email: this.email,
           password: this.password,
         };
-        axios.post("http://localhost:4000/api/auth/login",this.user).then(data=>{
+        axios.post(`${process.env.VUE_APP_PROD}/api/auth/login`,this.user).then(data=>{
           if(data.data === "not_found"){
              return this.$swal("Error!", "This user doesn't exist on the Database!", "warning");
           }
