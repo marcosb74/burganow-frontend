@@ -46,7 +46,9 @@ On the admin-side, the administrator can remove products, add new products, modi
 
   - [Live version!](https://burga-now.netlify.app/)
 
-## Commands <a name = "introduction"></a>
+## Commands <a name = "cmds"></a>
+
+
 ```
 npm install -  to install the project
 ```
